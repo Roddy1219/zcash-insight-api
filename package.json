@@ -1,8 +1,8 @@
 {
-  "name": "insight-api-zcash",
+  "name": "zcash-insight-api",
   "description": "A Zcash blockchain REST and web socket API service for Bitcore Node.",
   "version": "0.4.3",
-  "repository": "git://github.com/str4d/insight-api-zcash.git",
+  "repository": "git://github.com/str4d/zcash-insight-api.git",
   "contributors": [
     {
       "name": "Gustavo Cortez",
@@ -42,9 +42,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/str4d/insight-api-zcash/issues"
+    "url": "https://github.com/str4d/zcash-insight-api/issues"
   },
-  "homepage": "https://github.com/str4d/insight-api-zcash",
+  "homepage": "https://github.com/str4d/zcash-insight-api",
   "license": "MIT",
   "keywords": [
     "insight",
@@ -65,8 +65,8 @@
   "bitcoreNode": "lib",
   "dependencies": {
     "async": "*",
-    "bitcore-lib-zcash": "str4d/bitcore-lib-zcash",
-    "bitcore-message-zcash": "str4d/bitcore-message-zcash",
+    "zcash-bitcore-lib": "^0.13.19",
+    "zcash-bitcore-message": "^1.0.2",
     "body-parser": "^1.13.3",
     "compression": "^1.6.1",
     "lodash": "^2.4.1",

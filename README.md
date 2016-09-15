@@ -1,24 +1,28 @@
 # Insight API
 
-A Zcash blockchain REST and web socket API service for [Bitcore Node](https://github.com/bitpay/bitcore-node).
+A Zcash blockchain REST and web socket API service for [Zcash Bitcore Node](https://github.com/bitmex/zcash-bitcore-node).
+
+Forked for [Zcash](https://github.com/zcash/zcash) for use with [Bitcore](https://github.com/bitmex/zcash-bitcore).
+
+Credit to @bitpay for the original implementation and @str4d for the Zcash fork.
 
 This is a backend-only service. If you're looking for the web frontend application, take a look at https://github.com/bitpay/insight-ui.
 
 ## Getting Started
 
 ```bashl
-npm install -g bitcore-node@latest
-bitcore-node create mynode
+npm install -g zcash-bitcore-node@latest
+zcash-bitcore-node create mynode
 cd mynode
-bitcore-node install insight-api-zcash
-bitcore-node start
+zcash-bitcore-node install zcash-insight-api
+zcash-bitcore-node start
 ```
 
 The API endpoints will be available by default at: `http://localhost:3001/insight-api/`
 
 ## Prerequisites
 
-- [Bitcore Node 3.x](https://github.com/bitpay/bitcore-node)
+- [Zcash Bitcore Node 3.x](https://github.com/bitmex/zcash-bitcore-node)
 
 **Note:** You can use an existing Zcash data directory, however `txindex`, `addressindex`, `timestampindex` and `spentindex` needs to be set to true in `zcash.conf`, as well as a few other additional fields.
 
@@ -119,7 +123,7 @@ Or disabled entirely with:
     }
   }
   ```
-  
+
 
 ## API HTTP Endpoints
 
